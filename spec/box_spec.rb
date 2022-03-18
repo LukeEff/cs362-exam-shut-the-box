@@ -13,7 +13,7 @@ describe 'A box' do
   describe 'creation' do
     context 'by default' do
       it 'will initialize an array of tiles' do
-        skip
+        expect(box.tiles[0]).to be_an_instance_of(Tile)
       end
     end
     context 'with a specific array of tiles' do
