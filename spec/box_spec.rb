@@ -18,7 +18,9 @@ describe 'A box' do
     end
     context 'with a specific array of tiles' do
       it 'will retain the tiles passed its constructor' do
-        skip
+        tiles = TileSet.generate
+        box = Box.new(tiles) 
+        expect(box.tiles).to eq(tiles)
       end
     end
   end
