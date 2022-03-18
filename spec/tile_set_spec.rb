@@ -16,7 +16,15 @@ describe 'A tile set' do
     end
 
     it 'returns an array of tiles whose values increase from 1, by 1' do
-      skip
+      tiles = TileSet.generate
+      expect(tiles[0].value).to eq(tiles[1].value - 1)
+      expect(tiles[1].value).to eq(tiles[2].value - 1)
+      expect(tiles[2].value).to eq(tiles[3].value - 1)
+      expect(tiles[3].value).to eq(tiles[4].value - 1)
+      expect(tiles[4].value).to eq(tiles[5].value - 1)
+      expect(tiles[5].value).to eq(tiles[6].value - 1)
+      expect(tiles[6].value).to eq(tiles[7].value - 1)
+      expect(tiles[7].value).to eq(tiles[8].value - 1)
     end
 
   end
