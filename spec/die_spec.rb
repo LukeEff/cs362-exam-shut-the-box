@@ -20,7 +20,9 @@ describe 'A die' do
     end
 
     it 'can be created with a custom number of sides' do
-      skip
+      num_sides = 4
+      die = Die.new(num_sides)
+      expect(die.number_of_sides).to eq(num_sides)
     end
   end
 
