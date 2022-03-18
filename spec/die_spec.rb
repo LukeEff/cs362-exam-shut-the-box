@@ -10,7 +10,7 @@ describe 'A die' do
     end
 
     it 'it has face value' do
-      skip
+      expect(die).to respond_to(:face_value)
     end
   end
 
