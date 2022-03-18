@@ -17,6 +17,7 @@ describe 'A tile set' do
 
     it 'returns an array of tiles whose values increase from 1, by 1' do
       tiles = TileSet.generate
+      expect(tiles[0].value).to eq(1)
       expect(tiles[0].value).to eq(tiles[1].value - 1)
       expect(tiles[1].value).to eq(tiles[2].value - 1)
       expect(tiles[2].value).to eq(tiles[3].value - 1)
