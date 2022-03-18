@@ -38,7 +38,9 @@ describe 'A box' do
 
   describe '#no_tiles_remaining?' do
     it 'returns true when none of the tiles are up' do
-      skip
+      box = Box.new(TileSet.generate(1))
+      box.tiles[0].flip
+      expect(box.no_tiles_remaining?).to eq(true)
     end
     it 'returns false when any tile is up' do
       skip
