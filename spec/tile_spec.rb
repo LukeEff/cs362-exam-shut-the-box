@@ -14,7 +14,7 @@ describe 'A tile' do
 
   describe '#up?' do
     it 'is up by default' do
-      skip
+      expect(tile.up?).to eq(true)
     end
   end
 
